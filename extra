@@ -1,0 +1,12 @@
+<div class="Project-wrapper2">
+       <div class="Project3">
+            <img src="project3.jpg" alt="Project3" class="Project-img2">
+            <h5 class="Project-tagline2">A combination mark logo of a clothing brand named as sapphire</h5>
+            <span class="view-button2">View Project →</span>
+        </div>
+        <div class="Project4">
+            <img src="project4.jpg" alt="Project4" class="Project-img2">
+            <h5 class="Project-tagline2">A combination mark logo of a clothing brand named as sapphire</h5>
+            <span class="view-button2">View Project →</span>
+        </div> 
+</div>

@@ -1,0 +1,474 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color:#F2F6FF;                 
+  min-height: 100vh;          
+}
+.header-section{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ margin: 20px;
+ height: 10%;
+}
+#openMenu,#closeMenu{
+  font-size:20px;
+  display: none;
+  cursor:pointer;
+  margin:25px 8px;
+}
+.logo-container {
+  display: flex;        
+  align-items: center;    
+  gap:3px;              
+}
+.logo-icon {
+  width:40px;             
+  height:auto;
+}
+.brand-name { 
+  color: #010101;      
+  font-weight:700;   
+}
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;   
+  margin-top:25px;  
+  width:35vw;
+
+}
+.nav-bar a {
+  text-decoration:none;
+  color: #333;
+  font-size:15px;
+  font-weight: bold;
+}
+.login-button{
+  background-color: #6724F9;  
+  color: white;
+  padding: 10px 24px;
+  text-decoration: none;        
+  font-size:large;        
+  align-items: center;
+  height:auto;
+  margin: 10px;
+}
+.login-button:hover {
+  background-color: #4500b5;    
+}
+.hero-section {
+  display: flex;  
+  align-items: center;  
+  justify-content: space-between;  
+  padding: 3rem;
+  padding-top: 0px;
+  min-height: 40vh;  
+  background-color:#F2F6FF; 
+}
+.left-wrapper {
+  flex: 1;  
+  max-width: 500px;
+}
+.Tag-line {
+  font-size:2rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+.Description {
+  font-weight: normal;
+  margin-bottom: 2rem;
+  color: #555;
+}
+.cta-start-button {
+  background-color: #6724F9;  
+  color: white;
+  padding: 1.2rem 2rem;
+  text-decoration: none;        
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  transition: 0.3s;
+}
+.cta-start-button:hover {
+  background-color: #4500b5;
+  transform: translateY(-2px);
+}
+.right-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;  
+}
+.hero-image {
+  width:65%;
+  border-top-left-radius: 100px;  
+  border-bottom-left-radius: 100px;
+  padding-top: 2rem;
+}
+.companies{
+  background-color: #F2F6FF;
+  text-align: center;
+}
+.best-companies {
+  font-weight: normal;
+  margin-bottom: 1.5rem;  
+}
+.logo-wrapper{
+  display:flex;          
+  justify-content:center;  
+  align-items: center;     
+  gap:20px;             
+}
+.logo-text-wrapper{
+ display:flex;          
+  justify-content:center;  
+  align-items: center; 
+  gap:2px; 
+}
+.company-logo {
+  width: 20px;          
+  height: auto;
+  opacity: 0.7;           
+  filter: grayscale(100%);   
+  transition: 0.3s;
+}
+.company-logo:hover {
+  opacity: 1;
+  filter: grayscale(0%);  
+}
+.Company-name{
+  font-weight:bold;
+  font-family:'Poppins', serif;
+}
+.Projects {
+  padding: 4rem;
+  padding-top:2rem;
+  padding-bottom:1rem;
+  background-color:#F2F6FF;
+}
+
+.Projects-header {
+  margin-bottom:2rem;
+  font-weight: normal;
+  font-size: small;
+}
+.Project-description{
+text-align: justify;
+}
+.Project-wrapper1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 40px;  
+}
+
+.Project-card {
+  display: flex;
+  flex-direction: column;  
+  gap: 15px;
+}
+.Project-img {
+  width: 100%;  
+  height: 300px;  
+  object-fit: cover;  
+  border-radius: 12px;
+}
+.Project-tagline {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0;
+}
+.view-button {
+  color: #6724F9;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+.Testimonies {
+  min-height: auto;  
+  padding:1rem ;
+  background-color:#F2F6FF;
+}
+.Testimonies-head, .Testimonies-header {
+  padding:3rem;
+  text-align: left;
+  padding-top: 0px;
+  padding-bottom:0px;
+}
+.Testimonies-head {
+  color: #6724F9;
+}
+.Testimonies-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 8px;
+}
+.Testimony-Item {
+  display: flex;  
+  background:#F2F6FF;
+  padding: 20px;
+  align-items: center;
+  gap: 10px;
+}
+.Testimonies-img {
+  width: 200px;  
+  height: 300px;
+  object-fit: cover;
+}
+.stars {
+  display: flex;
+  gap: 5px;
+}
+.rating-star {
+  width: 18px;
+  height: 18px;
+}
+.Client-review {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+.Designer{
+  font-size:15px;
+  padding-top:0px;
+  gap:0px;
+}
+.Designer-field{
+  font-weight: normal;
+  font-size: small;
+  gap:0px;
+}
+.footer{
+  width: auto;
+  height:fit-content;
+  background-color:#010101;
+  justify-content: center;
+  padding-top: 0px;
+}
+.footer-header{
+  color: rgba(255, 255, 255, 0.854);
+  font-weight: bold;
+  text-align: center;
+  padding-top:50px;
+}
+.footer-head{
+color: rgba(255, 255, 255, 0.854);
+text-align: center;
+font-size: small;
+font-weight: normal;
+}
+.footer-button {
+  background-color: #6724F9;  
+  color: white;
+  padding:1.2rem 2rem;
+  text-decoration: none;        
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin:auto;
+  margin-top: 20px;
+  gap: 15px;
+  transition: 0.3s;
+  width: 30%;
+}
+.footer-button:hover {
+  background-color: #4500b5;
+  transform: translateY(-2px);
+}
+.About-us{
+color: rgba(255, 255, 255, 0.854);
+text-align: left;
+font-weight: normal;
+font-size:medium;
+padding: 50px;
+padding-bottom: 0px;
+margin-bottom: 20px;
+}
+.categories{
+display:flex;
+padding:30px;
+padding-top: 0px;
+}
+.categories a{
+  color:rgba(255, 255, 255, 0.854);
+  text-decoration: none;
+  margin:25px;
+  float: left;
+  margin-top: 0px;
+}
+.autograph{
+  color:rgba(255, 255, 255, 0.854);
+  padding: 20px;
+  font-weight: normal;
+  font-size: small;
+  text-align: center;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+.header-section{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ margin:15px;
+ height: 10%;
+}
+.logo-container {
+  display: flex;        
+  align-items: center;    
+  gap:2px;              
+}
+.logo-icon {
+  width:40px;             
+  height:auto;
+}
+.brand-name { 
+  color: #010101;      
+  font-weight:700;
+  font-size: medium;   
+}
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  gap:8px;   
+  margin-top:15px;  
+  width:35vw;
+
+}
+.nav-bar a {
+  text-decoration:none;
+  color: #333;
+  font-size:15px;
+  font-weight: bold;
+}
+.login-button{
+  padding:2px 10px
+}
+}
+@media only screen and (max-width:767px){       /*mobile design*/
+  #navbar{
+    display:none;
+  }
+  .nav-bar {
+  display:flex;
+  background-color: #6724F9;  
+  padding: 16px 28px;
+  position:absolute;
+  top:65px;
+  left: 0;
+  width: 100%;
+}
+.nav-bar a{
+  color: rgba(255, 255, 255, 0.854);
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+}
+#openMenu{
+  display: block;
+}
+.login-button{
+   /* max-height:50px; */
+   align-items: center;
+}
+.hero-section {
+  display: flex;
+  flex-direction:column;  
+  justify-content: center;
+  align-items: center;
+  padding:4rem;
+  min-height:20rem;  
+  background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(assets/hero.jpg); 
+  background-size: cover;
+  gap:0px;
+}
+.left-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap:0px;
+  border:none;
+  padding:0;
+  max-width: 100%;
+  position:static;
+  text-align: center;
+}
+.Tag-line {
+  font-weight:normal;
+  color:white;
+}
+.Description {
+  font-weight: normal;
+  color:rgba(255, 255, 255, 0.614);
+}
+.cta-start-button {
+  background-color: #6724F9;  
+  color: white;
+  padding:1rem 1.5rem;
+  text-decoration: none;        
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap:5px;
+  width:100%;
+}
+.cta-start-button:hover {
+  background-color: #4500b5;
+}
+.right-wrapper {
+  display:none;
+}
+.hero-image{
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  padding-top:0;
+}
+.companies{
+  background-color: #F2F6FF;
+  text-align: center;
+  margin-top:20px;
+}
+.best-companies {
+  font-weight: normal;  
+}
+.Project-wrapper1 {
+  grid-template-columns: 1fr;
+}
+.Testimonies-wrapper {
+  grid-template-columns: 1fr; 
+}
+.footer-button {
+  background-color: #6724F9;  
+  color: white;       
+  position: absolute;
+  right:30%;
+  width: max-content;
+  height:50px;
+  align-items: center;
+}
+.About-us{
+color: rgba(255, 255, 255, 0.854);
+text-align: left;
+font-weight: normal;
+font-size:medium;
+margin-top:35px;
+}
+.categories{
+display:flex;
+}
+.categories a{
+  color:rgba(255, 255, 255, 0.854);
+  text-decoration: none;
+  float: left;
+}
+.autograph{
+  color:rgba(255, 255, 255, 0.854);
+  font-weight: normal;
+  font-size: small;
+  text-align: center;
+}
+}
+
+

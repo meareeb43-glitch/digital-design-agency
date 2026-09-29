@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            width: 100vw;
+            min-height: 100dvh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .signup-form {
+            background-color: #F2F6FF;
+            height: fit-content;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .Form {
+            text-align: center;
+        }
+
+        .form-heading {
+            background-color: transparent;
+            color: black;
+            height: fit-content;
+            padding: 18px 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            text-align: center;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 25px 5px;
+            margin-bottom: 2px;
+            border-radius: 20px;
+            background-color: transparent;
+            border: 1px solid black;
+        }
+
+        input[type="Submit"] {
+            width: 100%;
+            background-color: #6724F9;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: small;
+            border-radius: 20px;
+            border: 1px solid white;
+            padding: 10px;
+            margin: 20px 5px;
+        }
+
+        input[type="Submit"]:hover {
+            background-color: #4500b5;
+        }
+
+        .acc-verification {
+            display: flex;
+            gap: 4px;
+            justify-content: center;
+            margin: 0px;
+            font-size: small;
+        }
+
+        a {
+            text-decoration: none;
+            color: #6724F9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="signup-form" id="signup-form">
+        <form action="" method="get">
+            <h1 class="form-heading">Signup Form</h1>
+            <input type="email" name="Email" id="Email" placeholder="Email">
+            <input type="password" id="create-password" placeholder="Create Password">
+            <input type="password" id="confirm-password" placeholder="Confirm Password">
+
+            <input type="Submit" value="Signup">
+            <div class="acc-verification">
+                <p>Already have an account?</p>
+                <a href="Loginform.html">Login</a>
+            </div>
+            <a href="index.html" style="display: block; text-align: center; margin-top: 10px; font-size: 13px; color: #6724F9;">
+        ← Back to home
+    </a>
+        </form>
+    </div>
+    
+</body>
+
+</html>

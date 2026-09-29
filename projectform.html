@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project requirement form</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 15px 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 8px;
+            background-color:#F2F6FF; 
+        }
+
+        .header-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 20px;
+            height: 10%;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+        }
+        .logo-icon {
+            width: 40px;
+            height: auto;
+        }
+        .brand-name {
+            color: #010101;
+            font-weight: 700;
+            font-family: 'poppins', serif;
+        }
+        .home-button{
+          text-decoration: none;
+          background-color: #6724F9;
+          color:white;
+          padding:0.5rem 2rem;
+          border: 1px solid black;
+        }
+        .project-form {
+            background-color: #F2F6FF;
+            min-height: 100vh;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid black;
+            border-radius: 2px;
+        }
+        .Form {
+            text-align: center;
+            font-size: large;
+        }
+
+        .form-heading {
+            background-color: transparent;
+            color: black;
+            height: fit-content;
+            padding: 18px 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            text-align: center;
+        }
+        p {
+            margin: 5px;
+            font-weight: medium;
+            font-size: 12px;
+        }
+
+        #date {
+            width: 100%;
+            padding: 10px;
+            margin: 12px 3px;
+            background: transparent;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        .Project-Owner {
+            margin: 5px;
+            font-weight: medium;
+            font-size: 12px;
+        }
+
+        .owner-info {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+            background-color: transparent;
+            border: 1px solid black;
+        }
+
+        .firstName,
+        .lastName {
+            font-size: 8px;
+            width: 100%;
+        }
+
+        .dept-info {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 5px;
+        }
+
+        .department,
+        .manager {
+            width: 100%;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            background-color: transparent;
+            border-radius: 10px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            height: 40px;
+            background-color: #6724F9;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #4500b5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-section">
+        <div class="logo-container">
+            <img src="assets/letter-d.png" alt="Logo" class="logo-icon">
+            <h2 class="brand-name">Digital Design Agency</h2>
+        </div>
+        <a href="index.html" class="home-button">
+            ← Back to home
+        </a>
+    </div>
+    <div class="project-form" id="project-form">
+        <form action="" method="get">
+            <h1 class="form-heading">Project Request Form</h1>
+            <hr>
+            <p>Today's Date
+                <input type="date" name="date" id="date" placeholder="Enter the date">
+            </p>
+            <div class="form-group">
+                <label class="Project-Owner">Project Owner*</label>
+                <div class="owner-info">
+                    <p class="firstName ">First Name
+                        <input type="text" required name="First Name" placeholder="FirstName">
+                    </p>
+                    <p class="lastName">Last Name
+                        <input type="text" required name="Last Name" placeholder="LastName">
+                    </p>
+                </div>
+            </div>
+            <p>Project Title
+                <input type="text" name="text" id="textbox" placeholder="Project Title">
+            </p>
+            <div class="dept-info">
+                <p class="department">Department
+                    <textarea placeholder="Department" name="Department" id="Department"></textarea>
+                </p>
+                <p class="manager">Manager
+                    <textarea placeholder="Manager" name="Manager" id="Manager"></textarea>
+                </p>
+            </div>
+            <input type="submit" value="Submit form">
+        </form>
+    </div>
+
+</body>
+
+</html>
